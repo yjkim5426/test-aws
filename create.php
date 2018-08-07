@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Create</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
@@ -14,7 +14,13 @@
 
 <body>
 
-    <h1>test web page</h1>
+    <h1>Create new</h1>
+
+    <form action="process_create.php" method="POST">
+        <!-- <p><input type="text" name="Id" placeholder="Id"></p> -->
+        <p><input type="text" name="Name" placeholder="Name"></p>
+        <p><input type="submit"></p>
+    </form>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
