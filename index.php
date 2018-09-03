@@ -30,10 +30,15 @@
         echo 'Name: '.$row['Name'].'<br>';
         //echo '<a href="process_delete.php?id='.$row['Id'].'">Delete</a><span>&nbsp&nbsp&nbsp&nbsp</span>';
         echo '<form action="process_delete.php" method="post">
-            <input type="hidden" name="id" value="'.$row['Id'].'">
-            <input type="submit" value="delete">
-        </form>';
-        echo '<a href="index.php?id='.$row['Id'].'">Edit</a>';
+                <input type="hidden" name="id" value="'.$row['Id'].'">
+                <input type="submit" value="delete">
+              </form>';
+        echo '<form action="edit.php" method="post">
+                <input type="hidden" name="id" value="'.$row['Id'].'">
+                <input type="hidden" name="name" value="'.$row['Name'].'">
+                <input type="submit" value="edit">
+              </form>';
+        // echo '<a href="edit.php?id='.$row['Id'].'">Edit</a>';
 
         echo '<br><br>';
 

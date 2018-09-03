@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Create</title>
+    <title>Edit</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
@@ -13,12 +13,17 @@
 </head>
 
 <body>
-    <h1>Create new</h1>
+    <h1>Edit</h1>
 
-    <form action="process_create.php" method="POST">
+    <form action="process_edit.php" method="POST">
         <!-- <p><input type="text" name="Id" placeholder="Id"></p> -->
-        <p><input type="text" name="Name" placeholder="Name"></p>
-        <p><input type="submit"></p>
+        <label>ID: </label>
+        <input type="text" name="id" value=<?php echo $_POST['id']; ?>>
+
+        <label>Name: </label>
+        <input type="text" name="name" value=<?php echo $_POST['name']; ?>>
+    
+        <input type="submit" value="Update">
     </form>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
